@@ -189,7 +189,7 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 
 .nav ul {
@@ -199,6 +199,7 @@
 .nav li:hover {
     background-color: grey;
     color: black;
+    transform: scale(1.1, 1);
 }
 
 .nav li {
@@ -344,6 +345,52 @@
     height: 120px;
 }
 
+.footer li:hover {
+    transform: scale(1.1, 1);
+}
+
+/* css quienes somos */
+.grilla2 {
+    display: grid;
+    grid-template-areas:
+        "nav header header"
+        "nav main main"
+        "nav main main"
+        "nav footer footer"
+    ;
+    grid-template-rows: 10vw 40vw 40vw 10vw;
+    grid-template-columns: 10vw 45vw 45vw;
+}
+
+.main {
+    grid-area: main;
+    background-image: url(https://archive.org/download/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.fonbody {
+    background-image: url(https://archive.org/download/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313.jpg);
+    background-size: cover;
+}
+
+.titu2 {
+    color: red;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.textcolor {
+    color: aliceblue;
+    text-align: center;
+}
+
+.fotoqui {
+    width: 400px;
+    height: 250px;
+    padding: 1rem;
+}
+
 /* responsive desing - media query- mobile last */
 /* mobile last- max width */
 @media(max-width: 480px) {
@@ -375,7 +422,7 @@
     }
 
     .nav li {
-        padding: 16px;
+        padding: 12px;
     }
 
     .imgpr {
@@ -407,7 +454,7 @@
         font-size: 15px;
         margin: 2px;
         text-decoration: overline underline;
-        color: rgb(218, 201, 201);
+        color: red;
     }
 
     .imgsection2 {
@@ -454,12 +501,28 @@
         margin: 40px;
 
     }
+
     .fotofig {
         width: 338px;
         height: 343px;
         margin: 40px;
     }
 
-    form {
-    margin-left: 25px;
+    .form {
+        margin-left: 25px;
     }
+
+    .grilla2 {
+        display: grid;
+        grid-template-areas:
+            "nav nav nav"
+            "header header header"
+            "main main main"
+            "footer footer footer"
+        ;
+        grid-template-rows: 10vh 10vh 70vh 10vh;
+        grid-template-columns: 10vw 45vw 45vw;
+    }
+
+
+}
