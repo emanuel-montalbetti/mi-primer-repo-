@@ -1,528 +1,409 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
+  margin: 0;
+  padding: 0; }
 
-/* Index css */
-
-.titulopr {
-    background-color: #1F1F1F;
-    display: block;
-    height: 36px;
-    text-align: center;
-}
-
-.img {
-    width: 104px;
-    height: 74px;
-}
-
-.menup {
-    display: flex;
-    text-align: left;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
-}
-
-.menup li {
-    list-style: none;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.menup a {
-    color: black;
-}
-
-.titusecu {
-    background-color: #AE0A0A;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-}
-
-.tabla {
-    border: solid 2px black;
-    background-color: #AE0A0A;
-    padding: 20px;
-}
-
-.piepag {
-    background-color: #AE0A0A;
-    margin: 5px 0px 5px 0px;
-}
-
-.piepag a {
-    color: khaki;
-}
-
-.flexheader {
-    display: flex;
-    background-color: #1F1F1F;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.sedesimg {
-    height: 431px;
-    width: 664px;
-}
-
-.fotoinicio {
-    display: flex;
-    justify-content: center;
-    background-color: #AE0A0A;
-}
-
-.textinicio {
-    text-align: center;
-    font-size: large;
-    font-family: 'Raleway';
-    color: black;
-}
-
-/* Quienes somos css */
-
-.inline {
-    padding: 20px;
-    text-align: center;
-    font-size: large;
-    font-family: 'raleway';
-}
-
-
-
-.tituter {
-    background-color: #AE0A0A;
-    font-size: 25px;
-    font-family: sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    color: black;
-
-}
-
-.imgral {
-    width: 382px;
-    height: 243px;
-    margin: 5px 480px;
-}
-
-/* CSS FIGHTERS */
-
-.fotofig {
-    width: 338px;
-    height: 343px;
-    margin: 5px 513px;
-}
-
-.backcolor {
-    background-color: #1F1F1F;
-}
-
-.fighter {
-    text-align: center;
-    background-color: brown;
-    font-size: large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: 10px double;
-}
-
-.margin {
-    margin-top: 5px;
-}
-
-.border {
-    border: #1F1F1F 10px;
-    padding-bottom: 2px;
-}
-
-/* CSS CONTACTO */
-
-.colorform {
-    background-color: #AE0A0A;
-}
-
-.textform {
-    font-family: fantasy;
-    font-size: large;
-    font-style: italic;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-}
-
-.buttom {
-    background-color: #AE0A0A;
-    border: #1F1F1F 5px double;
-    border-style: outset;
-    padding: 2px;
-}
-
-.imgcontac {
-    width: 535px;
-    height: 361px;
-    margin: -363px 589px;
-}
-
-.displayin {
-    display: inline;
-}
-
-/* Grilla Estructura */
-.grilla {
-    display: grid;
-    grid-template-areas:
-        "nav header header header"
-        "nav section1 section1 aside"
-        "nav section2 section2 aside"
-        "nav footer footer footer"
-    ;
-    grid-template-rows: 10vw 40vw 40vw 10vw;
-    grid-template-columns: 10vw 35vw 35vw 20vw;
-
-}
-
-/*navegador  */
-.nav {
+#index div {
+  display: grid;
+  grid-template-areas: "nav header header header"
+ "nav section1 section1 aside"
+ "nav section2 section2 aside"
+ "nav footer footer footer";
+  grid-template-rows: 10vw 40vw 40vw 10vw;
+  grid-template-columns: 10vw 35vw 35vw 20vw; }
+  #index div .imgpr {
+    width: 130px;
+    height: 130px; }
+  #index div nav {
     grid-area: nav;
     background-color: black;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-}
-
-.nav ul {
-    margin-top: 30px;
-}
-
-.nav li:hover {
-    background-color: grey;
-    color: black;
-    transform: scale(1.1, 1);
-}
-
-.nav li {
-    padding: 20px;
-}
-
-.nav a {
-    color: cornsilk;
-    text-decoration: none;
-}
-
-/* Encabezado */
-.header {
+    align-items: stretch; }
+    #index div nav ul {
+      margin-top: 30px; }
+      #index div nav ul li {
+        padding: 20px; }
+        #index div nav ul li:hover {
+          background-color: grey;
+          color: black;
+          transform: scale(1.1, 1); }
+        #index div nav ul li a {
+          color: cornsilk;
+          text-decoration: none; }
+  #index div header {
     grid-area: header;
     background-image: url(https://i.pinimg.com/564x/2f/13/a2/2f13a2e150a7288bd215c53f0883eabb.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-}
-
-.header h1 {
-    color: red;
-    text-align: center;
-    font-size: 50px;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-.header h2 {
-    color: cornsilk;
-    font-size: 30px;
-    text-align: center;
-}
-
-/* Primera seccion */
-.section1 {
+    background-position: center; }
+    #index div header h1 {
+      color: red;
+      text-align: center;
+      font-size: 50px;
+      padding: 10px;
+      text-transform: uppercase; }
+    #index div header h2 {
+      color: cornsilk;
+      font-size: 30px;
+      text-align: center; }
+  #index div section {
     grid-area: section1;
     background-image: url(https://us.123rf.com/450wm/romansli/romansli2003/romansli200300063/141671871-textura-de-fondo-gris-en-dise%C3%B1o-de-papel-vintage-antiguo-con-borde-negro-ilustraci%C3%B3n-de-fondo-de-met.jpg?ver=6);
     background-size: cover;
-    text-align: center;
-}
-
-.section1 h2,
-.section2 h3 {
-    font-size: 30px;
-    margin: 20px;
-    text-decoration: overline underline;
-    color: red;
-}
-
-.section1 div {
-    display: flex;
-}
-
-.imgsection1,
-.imgsection2 {
-    width: 50%;
-
-}
-
-/* Segunda seccion */
-.section2 {
+    text-align: center; }
+    #index div section h2 {
+      font-size: 30px;
+      margin: 20px;
+      text-decoration: overline underline;
+      color: red; }
+    #index div section div {
+      display: flex; }
+      #index div section div img {
+        width: 50%; }
+  #index div article {
     grid-area: section2;
     background-image: url(https://us.123rf.com/450wm/romansli/romansli2003/romansli200300063/141671871-textura-de-fondo-gris-en-dise%C3%B1o-de-papel-vintage-antiguo-con-borde-negro-ilustraci%C3%B3n-de-fondo-de-met.jpg?ver=6);
     background-size: cover;
-    text-align: center;
-}
-
-.section2 div {
-    display: flex;
-}
-
-.section2 p {
-    font-size: 18px;
-    font-style: oblique;
-    color: cornsilk;
-}
-
-/* barra lateral */
-.aside {
+    text-align: center; }
+    #index div article h3 {
+      font-size: 30px;
+      margin: 20px;
+      text-decoration: overline underline;
+      color: red; }
+    #index div article div {
+      display: flex; }
+      #index div article div p {
+        font-size: 18px;
+        font-style: oblique;
+        color: cornsilk; }
+    #index div article .imgsection2 {
+      width: 50%; }
+  #index div aside {
     grid-area: aside;
-    background-image: url(https://thumbs.dreamstime.com/b/fondo-oscuro-de-la-rejilla-122240695.jpg);
-}
-
-.aside h1 {
-    color: red;
-    font-size: 40px;
-    margin: 10px;
-    text-align: center;
-}
-
-.aside p {
-    color: cornsilk;
-    text-align: center;
-    font-size: 15px;
-    padding: 10px
-}
-
-.aside ul {
-    list-style: none;
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.aside li {
-    padding: 20px;
-    font-size: 25px;
-}
-
-.iconos {
-    width: 64px;
-    height: 64px;
-}
-
-/* Pie de pagina */
-.footer {
+    background-image: url(https://thumbs.dreamstime.com/b/fondo-oscuro-de-la-rejilla-122240695.jpg); }
+    #index div aside h1 {
+      color: red;
+      font-size: 40px;
+      margin: 10px;
+      text-align: center; }
+    #index div aside p {
+      color: cornsilk;
+      text-align: center;
+      font-size: 15px;
+      padding: 10px; }
+    #index div aside ul {
+      list-style: none;
+      color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #index div aside ul li {
+        padding: 20px;
+        font-size: 25px; }
+  #index div footer {
     grid-area: footer;
     background-image: url(https://us.123rf.com/450wm/romansli/romansli2003/romansli200300063/141671871-textura-de-fondo-gris-en-dise%C3%B1o-de-papel-vintage-antiguo-con-borde-negro-ilustraci%C3%B3n-de-fondo-de-met.jpg?ver=6);
     background-size: cover;
     display: flex;
     align-content: flex-start;
     justify-content: space-evenly;
-    align-items: center;
-}
+    align-items: center; }
+    #index div footer .imgfooter {
+      width: 120px;
+      height: 120px; }
+    #index div footer ol {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding-top: 50px; }
+      #index div footer ol li:hover {
+        transform: scale(1.1, 1); }
+      #index div footer ol li a {
+        color: red; }
 
-.footer ol {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding-top: 50px;
-}
+@media (max-width: 480px) {
+  #index div {
+    grid-template-areas: "nav nav nav nav"
+ "header header header header"
+ "section1 section1 section1 section1"
+ "section2 section2 section2 section2"
+ "footer footer footer footer";
+    grid-template-rows: 10vw 10vw 36vw 26vw 8vw;
+    grid-template-columns: 10vw 35vw 35vw 20vw; }
+    #index div nav {
+      grid-area: nav;
+      background-color: black;
+      display: flex;
+      align-items: flex-start;
+      align-content: stretch;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+      padding-top: 20px;
+      max-width: 480px; }
+      #index div nav ul {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row; }
+      #index div nav li {
+        padding: 12px; }
+    #index div .imgpr {
+      width: 50px;
+      height: 50px; }
+    #index div header h1 {
+      color: red;
+      text-align: center;
+      font-size: 15px;
+      text-transform: uppercase; }
+    #index div header h2 {
+      color: cornsilk;
+      font-size: 10px;
+      text-align: center; } }
 
-.footer a {
-    color: red;
-}
-
-.imgfooter {
-    width: 120px;
-    height: 120px;
-}
-
-.footer li:hover {
-    transform: scale(1.1, 1);
-}
-
-/* css quienes somos */
-.grilla2 {
+#quienessomos {
+  background-image: url(https://archive.org/download/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313.jpg);
+  background-size: cover; }
+  #quienessomos div {
     display: grid;
-    grid-template-areas:
-        "nav header header"
-        "nav main main"
-        "nav main main"
-        "nav footer footer"
-    ;
+    grid-template-areas: "nav header header"
+ "nav main main"
+ "nav main main"
+ "nav footer footer";
     grid-template-rows: 10vw 40vw 40vw 10vw;
-    grid-template-columns: 10vw 45vw 45vw;
-}
-
-.main {
+    grid-template-columns: 10vw 45vw 45vw; }
+    #quienessomos div .imgpr {
+      width: 130px;
+      height: 130px; }
+    #quienessomos div nav {
+      grid-area: nav;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch; }
+    #quienessomos div ul {
+      margin-top: 30px; }
+      #quienessomos div ul li {
+        padding: 20px; }
+        #quienessomos div ul li:hover {
+          background-color: grey;
+          color: black;
+          transform: scale(1.1, 1); }
+        #quienessomos div ul li a {
+          color: cornsilk;
+          text-decoration: none; }
+  #quienessomos header {
+    grid-area: header;
+    background-image: url(https://i.pinimg.com/564x/2f/13/a2/2f13a2e150a7288bd215c53f0883eabb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    #quienessomos header h1 {
+      color: red;
+      text-align: center;
+      font-size: 50px;
+      padding: 10px;
+      text-transform: uppercase; }
+    #quienessomos header h2 {
+      color: cornsilk;
+      font-size: 30px;
+      text-align: center; }
+  #quienessomos main {
     grid-area: main;
     background-image: url(https://archive.org/download/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313.jpg);
     background-size: cover;
-    text-align: center;
-}
-
-.fonbody {
-    background-image: url(https://archive.org/download/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313.jpg);
+    text-align: center; }
+    #quienessomos main h2, #quienessomos main h3 {
+      color: red;
+      text-align: center;
+      padding-top: 1rem; }
+    #quienessomos main p {
+      color: aliceblue;
+      text-align: center; }
+    #quienessomos main img {
+      width: 400px;
+      height: 250px;
+      padding: 1rem; }
+  #quienessomos footer {
+    grid-area: footer;
+    background-image: url(https://us.123rf.com/450wm/romansli/romansli2003/romansli200300063/141671871-textura-de-fondo-gris-en-dise%C3%B1o-de-papel-vintage-antiguo-con-borde-negro-ilustraci%C3%B3n-de-fondo-de-met.jpg?ver=6);
     background-size: cover;
-}
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: center; }
+    #quienessomos footer .imgfooter {
+      width: 120px;
+      height: 120px; }
+    #quienessomos footer ol {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding-top: 50px; }
+      #quienessomos footer ol li:hover {
+        transform: scale(1.1, 1); }
+      #quienessomos footer ol li a {
+        color: red; }
 
-.titu2 {
-    color: red;
-    text-align: center;
-    padding-top: 1rem;
-}
+#fighters header {
+  display: flex;
+  background-color: #1F1F1F;
+  justify-content: space-between;
+  align-items: center; }
+  #fighters header img {
+    width: 104px;
+    height: 74px; }
+  #fighters header h1 {
+    background-color: #1F1F1F;
+    display: block;
+    height: 36px;
+    text-align: center; }
+  #fighters header nav ul {
+    display: flex;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    list-style: none; }
+  #fighters header nav li {
+    margin-left: 5px;
+    margin-right: 5px; }
 
-.textcolor {
-    color: aliceblue;
-    text-align: center;
-}
+#fighters main h2 {
+  background-color: #AE0A0A;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center; }
 
-.fotoqui {
-    width: 400px;
-    height: 250px;
-    padding: 1rem;
-}
+#fighters main h3 {
+  background-color: #AE0A0A;
+  font-size: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  color: black; }
 
-/* responsive desing - media query- mobile last */
-/* mobile last- max width */
-@media(max-width: 480px) {
-    .grilla {
-        grid-template-areas:
-            "nav nav nav nav"
-            "header header header header"
-            "section1 section1 section1 section1"
-            "section2 section2 section2 section2""footer footer footer footer";
-        grid-template-rows: 10vw 10vw 36vw 26vw 8vw;
-        grid-template-columns: 10vw 35vw 35vw 20vw;
-    }
+#fighters main p {
+  text-align: center;
+  background-color: brown;
+  font-size: large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 10px double; }
 
-    .nav {
-        grid-area: nav;
-        background-color: black;
-        display: flex;
-        align-items: flex-start;
-        align-content: stretch;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        padding-top: 20px;
-    }
+#fighters main div {
+  background-color: #1F1F1F; }
+  #fighters main div img {
+    width: 338px;
+    height: 343px;
+    margin: 5px 513px; }
 
-    .nav ul {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: row;
-    }
+#fighters footer ol {
+  background-color: #AE0A0A;
+  margin: 5px 0px 5px 0px; }
+  #fighters footer ol a {
+    color: khaki; }
 
-    .nav li {
-        padding: 12px;
-    }
+#disciplinas header {
+  display: flex;
+  background-color: #1F1F1F;
+  justify-content: space-between;
+  align-items: center; }
+  #disciplinas header img {
+    width: 104px;
+    height: 74px; }
+  #disciplinas header h1 {
+    background-color: #1F1F1F;
+    display: block;
+    height: 36px;
+    text-align: center; }
+  #disciplinas header nav ul {
+    display: flex;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    list-style: none; }
+  #disciplinas header nav li {
+    margin-left: 5px;
+    margin-right: 5px; }
 
-    .imgpr {
-        width: 50px;
-        height: 50px;
-    }
+#disciplinas main h3 {
+  background-color: #AE0A0A;
+  font-size: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  color: black; }
 
+#disciplinas main p {
+  padding: 20px;
+  text-align: center;
+  font-size: large;
+  font-family: 'raleway'; }
 
-    .header h1 {
-        color: red;
+#disciplinas main img {
+  width: 382px;
+  height: 243px;
+  margin: 5px 480px; }
+
+#disciplinas footer ol {
+  background-color: #AE0A0A;
+  margin: 5px 0px 5px 0px; }
+  #disciplinas footer ol a {
+    color: khaki; }
+
+#contacto header {
+  display: flex;
+  background-color: #1F1F1F;
+  justify-content: space-between;
+  align-items: center; }
+  #contacto header img {
+    width: 104px;
+    height: 74px; }
+  #contacto header h1 {
+    background-color: #1F1F1F;
+    display: block;
+    height: 36px;
+    text-align: center; }
+  #contacto header nav ul {
+    display: flex;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    list-style: none; }
+  #contacto header nav li {
+    margin-left: 5px;
+    margin-right: 5px; }
+
+#contacto main {
+  background-color: #AE0A0A; }
+  #contacto main img {
+    width: 535px;
+    height: 361px;
+    margin: -363px 589px; }
+  #contacto main div {
+    display: inline; }
+    #contacto main div label {
+      font-family: fantasy;
+      font-size: large;
+      font-style: italic;
+      text-decoration-line: underline;
+      text-decoration-style: double; }
+      #contacto main div label span {
+        padding: 20px;
         text-align: center;
-        font-size: 30px;
-        text-transform: uppercase;
-    }
+        font-size: large;
+        font-family: 'raleway'; }
+    #contacto main div input {
+      background-color: #AE0A0A;
+      border: #1F1F1F 5px double;
+      border-style: outset;
+      padding: 2px; }
 
-    .header h2 {
-        color: cornsilk;
-        font-size: 25px;
-        text-align: center;
-    }
-
-    .imgsection1 {
-        height: 131px;
-    }
-
-
-    .section1 h2,
-    .section2 h3 {
-        font-size: 15px;
-        margin: 2px;
-        text-decoration: overline underline;
-        color: red;
-    }
-
-    .imgsection2 {
-        width: 0px;
-        height: 0px;
-    }
-
-    .section2 p {
-        font-size: 7px;
-    }
-
-
-
-    .footer ol {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        padding-bottom: 50px;
-    }
-
-    .footer img {
-        width: 30px;
-        height: 30px;
-    }
-
-
-
-    /* quienes somos query */
-
-    .flexheader {
-        display: flex;
-        background-color: #1F1F1F;
-        align-items: center;
-        align-content: stretch;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .imgral {
-        width: 350px;
-        height: 225px;
-        margin: 40px;
-
-    }
-
-    .fotofig {
-        width: 338px;
-        height: 343px;
-        margin: 40px;
-    }
-
-    .form {
-        margin-left: 25px;
-    }
-
-    .grilla2 {
-        display: grid;
-        grid-template-areas:
-            "nav nav nav"
-            "header header header"
-            "main main main"
-            "footer footer footer"
-        ;
-        grid-template-rows: 10vh 10vh 70vh 10vh;
-        grid-template-columns: 10vw 45vw 45vw;
-    }
-
-
-}
+#contacto footer ol {
+  background-color: #AE0A0A;
+  margin: 5px 0px 5px 0px; }
+  #contacto footer ol a {
+    color: khaki; }

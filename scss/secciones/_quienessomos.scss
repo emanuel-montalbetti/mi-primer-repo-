@@ -1,0 +1,124 @@
+#quienessomos{
+    background-image: url(https://archive.org/download/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313.jpg);
+    background-size: cover;
+        div{
+            display: grid;
+            grid-template-areas:
+            "nav header header"
+            "nav main main"
+            "nav main main"
+            "nav footer footer"
+            ;
+            grid-template-rows: 10vw 40vw 40vw 10vw;
+            grid-template-columns: 10vw 45vw 45vw;
+                .imgpr {
+                    width: 130px;
+                    height: 130px;
+                }
+                nav{
+                    grid-area: nav;
+                    background-color: black;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                }
+                ul{
+                    margin-top: 30px;
+            li{
+                padding: 20px;
+                &:hover{
+                    background-color: grey;
+                    color: black;
+                    transform: scale(1.1, 1);
+                }
+                a {
+                    color: cornsilk;
+                    text-decoration: none;
+                }
+            }
+        }
+        }
+        header{
+        grid-area: header;
+        background-image: url(https://i.pinimg.com/564x/2f/13/a2/2f13a2e150a7288bd215c53f0883eabb.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+            h1 {
+                color: red;
+                text-align: center;
+                font-size: 50px;
+                padding: 10px;
+                text-transform: uppercase;
+            }
+            h2 {
+                color: cornsilk;
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+        main{
+            grid-area: main;
+            background-image: url(https://archive.org/download/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313.jpg);
+            background-size: cover;
+            text-align: center;
+            h2, h3{
+                color: red;
+                text-align: center;
+                padding-top: 1rem;
+            }
+            p{
+                color: aliceblue;
+                text-align: center;
+            }
+            img{width: 400px;
+                height: 250px;
+                padding: 1rem;
+            }
+        }
+        footer {
+            grid-area: footer;
+            background-image: url(https://us.123rf.com/450wm/romansli/romansli2003/romansli200300063/141671871-textura-de-fondo-gris-en-dise%C3%B1o-de-papel-vintage-antiguo-con-borde-negro-ilustraci%C3%B3n-de-fondo-de-met.jpg?ver=6);
+            background-size: cover;
+            display: flex;
+            align-content: flex-start;
+            justify-content: space-evenly;
+            align-items: center;
+            .imgfooter {
+                width: 120px;
+                height: 120px;
+            }
+            ol {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                padding-top: 50px;
+            
+            li{
+                &:hover{transform: scale(1.1, 1);}
+                a {
+                    color: red;
+                }
+            }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }

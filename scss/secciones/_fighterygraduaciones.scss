@@ -1,0 +1,74 @@
+#fighters{
+    header{
+        display: flex;
+        background-color: #1F1F1F;
+        justify-content: space-between;
+        align-items: center;
+    
+        img{
+            width: 104px;
+            height: 74px;
+        }
+        
+        h1{
+            background-color: #1F1F1F;
+            display: block;
+            height: 36px;
+            text-align: center;
+        }
+        nav{
+            ul{
+                display: flex;
+                text-align: left;
+                font-weight: bold;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: black;
+            list-style: none;
+            }
+            li{
+                margin-left: 5px;
+            margin-right: 5px;
+            }
+        }
+    }
+    main{
+        h2{
+            background-color: #AE0A0A;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        h3{
+            background-color: #AE0A0A;
+            font-size: 25px;
+            font-family: sans-serif;
+            text-align: center;
+            text-decoration: underline;
+            color: black;
+        }
+        p{
+            text-align: center;
+            background-color: brown;
+            font-size: large;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 10px double;
+        }
+        div{
+            background-color: #1F1F1F;
+            img{
+                width: 338px;
+                height: 343px;
+                margin: 5px 513px;
+            }
+        }
+    }
+    footer{
+        ol{
+            background-color: #AE0A0A;
+            margin: 5px 0px 5px 0px;
+        a{
+            color: khaki;
+        }
+        }
+    }
+    
+}

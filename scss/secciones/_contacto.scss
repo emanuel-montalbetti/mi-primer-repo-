@@ -1,0 +1,75 @@
+#contacto{
+    header{
+        display: flex;
+        background-color: #1F1F1F;
+        justify-content: space-between;
+        align-items: center;
+    
+        img{
+            width: 104px;
+            height: 74px;
+        }
+        
+        h1{
+            background-color: #1F1F1F;
+            display: block;
+            height: 36px;
+            text-align: center;
+        }
+        nav{
+            ul{
+                display: flex;
+                text-align: left;
+                font-weight: bold;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: black;
+            list-style: none;
+            }
+            li{
+                margin-left: 5px;
+            margin-right: 5px;
+            }
+        }
+    }
+    main{
+        background-color: #AE0A0A;
+        img{
+            width: 535px;
+            height: 361px;
+            margin: -363px 589px;
+        }
+        div{
+            display: inline;
+            label{
+                font-family: fantasy;
+                font-size: large;
+                font-style: italic;
+                text-decoration-line: underline;
+                text-decoration-style: double;
+                span{
+                    padding: 20px;
+                    text-align: center;
+                    font-size: large;
+                    font-family: 'raleway';
+                }
+            }
+            input{
+                background-color: #AE0A0A;
+                border: #1F1F1F 5px double;
+                border-style: outset;
+                padding: 2px;
+            }
+        }
+    }
+    footer{
+        ol{
+            background-color: #AE0A0A;
+            margin: 5px 0px 5px 0px;
+        a{
+            color: khaki;
+        }
+        }
+    
+    }
+
+}
