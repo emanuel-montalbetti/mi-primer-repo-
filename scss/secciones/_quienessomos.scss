@@ -4,13 +4,12 @@
         div{
             display: grid;
             grid-template-areas:
-            "nav header header"
-            "nav main main"
-            "nav main main"
-            "nav footer footer"
+            "nav header"
+            "nav main"
+            "nav footer"
             ;
-            grid-template-rows: 10vw 40vw 40vw 10vw;
-            grid-template-columns: 10vw 45vw 45vw;
+            grid-template-rows: 10vw 80vw 10vw;
+            grid-template-columns: 10vw 90vw;
                 .imgpr {
                     width: 130px;
                     height: 130px;
@@ -37,7 +36,7 @@
                 }
             }
         }
-        }
+        
         header{
         grid-area: header;
         background-image: url(https://i.pinimg.com/564x/2f/13/a2/2f13a2e150a7288bd215c53f0883eabb.jpg);
@@ -70,13 +69,16 @@
             p{
                 color: aliceblue;
                 text-align: center;
+                padding-left: 4.5rem;
+                padding-right: 4.5rem;
             }
             img{width: 400px;
                 height: 250px;
-                padding: 1rem;
+                padding-top: 0.5rem;
             }
         }
         footer {
+            margin-top: 0.7rem;
             grid-area: footer;
             background-image: url(https://us.123rf.com/450wm/romansli/romansli2003/romansli200300063/141671871-textura-de-fondo-gris-en-dise%C3%B1o-de-papel-vintage-antiguo-con-borde-negro-ilustraci%C3%B3n-de-fondo-de-met.jpg?ver=6);
             background-size: cover;
@@ -104,21 +106,76 @@
             }
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
+
+    @media (max-width: 480px) {
+        div {
+            display: grid;
+            grid-template-areas:
+                "nav nav nav"
+                "main main main"
+                "main main main"
+                "footer footer footer"
+            ;
+            grid-template-rows: 10vh auto auto 10vh;
+            grid-template-columns: 30vw 35vw 35vw;
+        
+            .imgpr {
+                width: 50px;
+                height: 50px;
+            }
+            nav{
+                grid-area: nav;
+                background-color: black;
+                display: flex;
+                align-items: flex-start;
+                align-content: stretch;
+                flex-direction: column-reverse;
+                justify-content: space-around;
+                padding-top: 20px;
+                max-width: 480px;
+                ul {
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: row;
+                }
+                li {
+                    padding: 12px;
+                }
+            }
+    
+    
+            header {
+                h1{
+                    color: red;
+                    text-align: center;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                }
+                h2 {
+                    color: cornsilk;
+                    font-size: 10px;
+                    text-align: center;
+                }
+            }
+            
+        
+        footer{
+            .imgfooter{
+                width: 50px;
+                height: 50px;
+            }
+        ol{
+            padding-top: 0;
+        }
+        }
+        
+        
+        
+        
+        }
+    
+    }
+
+
+}
